@@ -1,0 +1,1230 @@
+:root{
+    --purple__title:#D4088C;
+    --secund__title:#04eccd;
+    --thre__title:#000;
+    --four__title:#f9fcf3;
+    --bacgraund__1: #01001E;
+    --background__2:#e2e2e2;
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*nav*/
+.menu{
+    opacity: 1;
+    color: var(--four__title);
+    display: flex;
+    justify-content: space-between;
+    background:var(--bacgraund__1);
+}
+.menu .mainmenu{
+    display: flex;
+    list-style: none;
+}
+.menu .mainmenu a{
+    position: relative;
+    font-family: 'Sail', cursive;
+    display: flex;
+    padding: 15px;
+    text-decoration: none;
+    color: var(--secund__title);
+    font-size: 24px;
+    transition: all .8s ease-in-out;
+}
+.menu .mainmenu a::before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background: var(--purple__title);
+    bottom: 0;
+    left: 0;
+    transition: all .8s ease-in-out;
+}
+.menu .mainmenu a:hover::before{
+    width: 100%;
+}
+.menu .mainmenu a:hover{
+    color: var(--purple__title);
+}
+.menu .openmenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+    color: var(--purple__title);
+}
+.menu .mainmenu .closemenu{
+    font-size: 36px;
+    display: none;
+    cursor: pointer;
+    color: var(--purple__title);
+    
+}
+.menu .logo{
+    margin: 6px;
+    font-size: 25px;
+    cursor: pointer;
+    color: var(--secund__title);
+    font-family: 'Sail', cursive;
+}
+.menu .logo span{
+    color: var(--purple__title);
+    font-family: 'Sail', cursive;
+}
+/*header*/
+.header{
+    background: #fff; 
+    width: 100%;
+    height: 100vh;
+    text-decoration: none;
+    font-family: 'PT Serif', serif;
+}
+.information .info__1{
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    margin: 0px 20px;
+}
+.mi__nombre{
+    font-family: 'Sail', cursive;
+    color: var(--purple__title);
+}
+.mi__nombre .titulo{
+    font-size: 45px;
+    color: var(--secund__title);
+    padding: 5px 0px;
+}
+.mi__nombre .titulo span{
+    color:  var(--purple__title);
+}
+.mi__nombre .sub__titulo{
+    color:var(--secund__title);
+    font-size: 40px;
+    font-weight: 900;
+}
+.mi__nombre .description{
+    color: var(--thre__title);
+    font-family: 'PT Serif', serif;
+    padding: 15px 0px;
+    font-size: 24px;
+}
+.mi__nombre .btn{
+    text-decoration: none;
+}
+.mi__nombre .btn a{
+    background: var(--purple__title);
+    color: var(--four__title);
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 5px 20px;
+    border: 2px solid var(--purple__title);
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+    transition: all .5s ease-in-out;
+    text-transform: uppercase;
+}
+.mi__nombre .btn a:hover{
+    background: #fff;
+    border: 2px solid var(--secund__title);
+    border-radius: 25px;
+    color: var(--secund__title);
+}
+.icon__header{
+    padding: 10px 0px;
+}
+.icon__header a i{
+    font-size: 60px;
+    color: var(--purple__title);
+    margin: 0 5px;
+    transition: all 1s ease-in-out;
+    text-decoration: none;
+    cursor: pointer;
+}
+.icon__header a i:hover{
+    transform: rotate(360deg) scale(.7);
+    color: var(--secund__title);
+}
+
+.foto__header{
+    text-align: center;
+    margin-left: 0;
+}
+.foto__header figure img{
+    width: 450px;
+    height: 450px;
+}
+
+/*Abaut*/
+.abaut__contenedor{
+    width: 100%;
+    min-height: 100vh;
+    background: var(--bacgraund__1);
+    text-align: center;
+}
+.abaut__contenedor .abaut__container{
+    height: 100vh;
+    align-items: center;
+    margin: 0px 20px;
+    justify-content: space-between;
+}
+.abaut__contenedor .abaut__container .titulo__abaut{
+    color: var(--secund__title);
+    font-family: 'Sail',serif;
+    font-size: 36px;
+    font-weight: 700;
+}
+.abaut__contenedor .abaut__container .abaut__cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 80px 0px;
+}
+.abaut__contenedor .abaut__container .abaut__cont figure img{
+    width: 300px;
+    height: 400px;
+    border-radius: 25px;
+    border: var(--secund__title) solid 1px;
+    transition: all .3s ease-in-out;
+}
+.abaut__contenedor .abaut__container .abaut__cont .resume__abaut::before{
+    content: 'Quién soy';
+    color: var(--purple__title);
+    font-size: 24px;
+    padding: 20px;
+    font-family: 'Sail', serif;
+    font-weight: 700;
+}
+.abaut__contenedor .abaut__container .abaut__cont .resume__abaut{
+    margin-left: 200px;
+}
+
+.abaut__contenedor .abaut__container .abaut__cont .resume__abaut .resume p{
+    text-align: justify;
+    color: var(--four__title);
+    font-family:'PT Serif', serif;
+    font-size: 24px;
+    padding: 20px 0px;
+}
+.abaut__contenedor .abaut__container .abaut__cont .resume__abaut .resume .btn__abaut a{
+    text-decoration: none;
+    color: var(--four__title);
+    background: var(--purple__title);
+    border-radius: 8px;
+    border: var(--purple__title) 2px solid;
+    font-family: 'PT Serif', serif;
+    padding: 10px 25px;
+    transition: all .5s ease-in-out;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.abaut__contenedor .abaut__container .abaut__cont .resume__abaut .resume .btn__abaut a:hover{
+    background: var(--secund__title);
+    border-radius: 25px;
+    border: var(--secund__title) solid 2px;
+    color: var(--four__title);
+}
+/*Skills*/
+.habilidades{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    align-items:center;
+    justify-content:center;
+}
+.centrar-bloque{
+    color: var(--secund__title);
+    font-family: 'Sail', cursive;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+}
+.centrar-bloque::after{
+    content: 'Lo que yo sé';
+    color: var(--purple__title);
+    font-size: 24px;
+    font-family: 'Sail',cursive;
+    font-weight: 400;
+    text-align: center;
+    display: block;
+}
+.habilidad-contenedor{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin:100px 20px
+}
+.habilidad-contenedor .habilidad{
+    overflow: hidden;
+    box-shadow:  0 0 10px var(--bacgraund__1);
+    width:162px;
+    height: 162px;
+    margin:20px 10px;
+    background: var(--secund__title);
+    border-radius: 25px;
+    border: 1px solid var(--secund__title);
+    transition:all .8s ease-in-out;
+}
+.habilidad:hover{
+    transform: scale(1.08);
+    background: var(--four__title);
+}
+.habilidad-img img{
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    transition: all .8s ease-in-out;
+}
+.habilidad-titulo{
+    opacity: 0;
+    transition: all .8s ease-in-out;
+}
+.habilidad-titulo p{
+    color: var(--bacgraund__1);
+    font-family: 'PT Serif', serif;
+    font-size: 24px;
+}
+.habilidad:hover .habilidad-img img{
+    transform: translateY(-20px);
+}
+.habilidad:hover .habilidad-titulo{
+    transform: translateY(-15px);
+    opacity: 1;
+}
+/*Portfolio*/
+.teams{
+    width: 100%;
+    height: 100vh;
+    background: var(--bacgraund__1);
+}
+.teams .title{
+    color: var(--secund__title);
+    font-family: 'Sail',cursive;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px 0px;
+}
+.teams .title::after{
+    content: 'Quién conmigo';
+    color: var(--purple__title);
+    display: block;
+    font-size: 24px;
+    padding: 10px 0px;
+}
+.teams .carousel .card{
+    background: var(--secund__title);
+    border-radius: 15px;
+    padding: 25px 20px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    margin: 50px 20px;
+    box-shadow:0 0 30px var(--secund__title);
+}
+.teams .carousel .card:hover{
+    background: var(--purple__title);
+    box-shadow:0 0 30px var(--purple__title);
+    transform: translateY(-15px) scale(1.05);
+}
+.teams .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+.teams .carousel .card .box p{
+    color: var(--four__title);
+}
+.teams .carousel .card:hover .box p{
+    color: var(--four__title);
+}
+.teams .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+.teams .carousel .card .text{
+    font-size: 24px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+    font-family: 'Sail', cursive;
+    color: var(--four__title);
+}
+.teams .carousel .card:hover .text{
+    color: var(--four__title);
+}
+.teams .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--purple__title);
+    transition: all 0.3s ease-in-out;
+}
+.teams .carousel .card:hover img{
+    border-color: var(--secund__title);
+    transform: scale(1.1);
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 0px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid var(--secund__title)!important;
+    transition: all 0.3s ease-in-out;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: var(--secund__title)!important;
+}
+
+/*Contacto*/
+
+.contacto{
+    width: 100%;
+    height: 100vh;
+}
+.contacto .titulo__contacto{
+    text-align: center;
+    color: var(--secund__title);
+    font-family: 'Sail', cursive;
+    font-size: 36px;
+    font-weight: 700;
+}
+.contacto .titulo__contacto::after{
+    content: 'Contáctame';
+    display: block;
+    color: var(--purple__title);
+    font-size: 24px;
+    margin: 10px 0px;
+}
+.contenido{
+    display: flex;
+}
+.subcontenido{
+    min-height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0px 20px;
+    box-shadow: 0 0 20px var(--secund__title);
+    border-radius: 25px;
+}
+.contenedor__contacto{
+    text-align: center;
+    display: block;
+    margin: 10px 20px;
+}
+.contenedor__contacto h3{
+    text-align: center;
+    color: var(--purple__title);
+    font-family: 'PT Serif', serif;
+    font-size: 24px;
+    margin: 10px 0px;
+}
+.contenedor__contacto p{
+    color: var(--secund__title);
+    font-family: ' PT Serif', serif;
+    font-size: 20px;
+    text-align: justify;
+}
+.contenedor__contacto p span{
+    color: var(--purple__title);
+    font-family: 'Sail', cursive;
+    font-size: 28px;
+}
+.info .col{
+    display: flex;
+    padding: 10px 0px;
+}
+.info .col a{
+    color: var(--purple__title);
+    font-size: 36px;
+    transition: all .3s  ease-in-out;
+}
+.info .col a:hover{
+    color: var(--secund__title);
+}
+.info .col p{
+    color: var(--secund__title);
+    font-family: 'PT Serif', serif;
+    padding: 0px 10px;
+    font-size: 24px;
+}
+.contenedor__contacto .redes1{
+    margin: 30px 0px;
+}
+.contenedor__contacto .redes1 a{
+    color: var(--purple__title);
+    font-size: 36px;
+    padding: 0px 5px;
+    display: block;
+    text-align: left;
+    transition: all .5s ease-in-out;
+}
+.contenedor__contacto .redes1 a i:hover{
+    color: var(--secund__title);
+}
+
+
+.subcontenido .form{
+    background: var(--purple__title);
+    text-align: center;
+    display: block;
+    border-radius: 25px;
+}
+.subcontenido .form h3{
+    color: var(--secund__title);
+    font-family: 'PT Serif', serif;
+    font-size: 24px;
+    padding: 20px 0px;
+}
+.subcontenido .form form{
+   margin: 0px 20px;
+}
+.subcontenido .form form input, .subcontenido .form form textarea{
+    width: 100%;
+   height: 100%;
+   color: var(--four__title);
+   font-family: 'PT Serif', serif;
+   font-size: 22px;
+   background: transparent;
+   outline: none;
+   letter-spacing: .5px;
+   border: var(--secund__title) 2px solid;
+   border-radius: 25px;
+   margin: 10px 0px;
+   padding: 10px;
+   transition: all .5s ease-in-out;
+}
+::placeholder{
+    color: var(--four__title);
+    background: transparent;
+
+}
+.subcontenido .form form textarea{
+    max-height: 120px;
+    resize: none;
+    overflow: hidden;
+}
+.subcontenido .form form input:hover{
+    background: none;
+}
+.subcontenido .form form .btn__enviar{
+    background: var(--secund__title);
+    color: var(--four__title);
+    padding: 7px 20px;
+    border: var(--secund__title) 2px solid;
+    border-radius:25px;
+    cursor: pointer;
+    font-size: 22px;
+    font-family: 'PT Srif', serif;
+    transition: all .3s ease-in-out;
+    float: right;
+}
+.subcontenido .form form .btn__enviar:hover{
+    background: transparent;
+}
+
+
+/*copyright*/
+footer{
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+    color: var(--four__title);
+    background: var(--bacgraund__1);
+}
+footer span{
+    text-align: center;
+    font-family: 'PT Serif', serif;
+    margin-top: 25px;
+}
+footer span a{
+    color: var(--purple__title);
+    text-decoration: none;
+    cursor: pointer;
+}
+/*RESPONSIVE*/
+
+ @media(max-width:700px){
+    .menu .mainmenu{
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: var(--secund__title);
+        transition: top 2s ease;
+        display: none;
+    }
+    .menu .mainmenu .closemenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 50px;
+        color: var(--purple__title);
+        font-size: 60px;
+    }
+    .menu .openmenu{
+        display: block;
+        font-size: 50px;
+    }
+    .menu .mainmenu a{
+        color: var(--four__title);
+        font-size: 60px;
+    }
+    .menu .mainmenu a:hover{
+        background: none;
+        color: var(--purple__title);
+        font-size: 4rem;
+    }
+    .menu .logo{
+        padding: 20px 0px;
+    }
+    /*header*/
+    .information .info__1{
+        display: block;
+        overflow: hidden;
+        padding-top: 100px;
+        justify-content: space-between;
+    }
+    .mi__nombre .titulo{
+        font-size: 40px;
+    }
+    .mi__nombre .sub__titulo{
+        font-size: 36px;
+    }
+    .mi__nombre .description{
+        font-size: 30px;
+    }
+    .foto__header{
+        margin: 40px 0;
+        text-align: center;
+        overflow: hidden;
+    }
+    /*abaut*/
+    .abaut__contenedor .abaut__container{
+        margin: 0 20px;
+    }
+    .abaut__contenedor .abaut__container .abaut__cont{
+        display: block;
+        margin: 0;
+    }
+    .abaut__contenedor .abaut__container .abaut__cont figure img{
+        width: 400px;
+        height: 450px;
+    }
+    .abaut__contenedor .abaut__container .abaut__cont .resume__abaut{
+        margin-left: 0;
+    }
+    .abaut__contenedor .abaut__container .abaut__cont .resume__abaut .resume p{
+        text-align: justify;
+        color: var(--four__title);
+        font-family:'PT Serif', serif;
+        font-size:24px;
+        padding: 10px 0px;
+    }
+    /*skills*/
+    .habilidades{
+        width: 100%;
+        height: 130vh;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .habilidad-contenedor{
+        overflow: hidden;
+        align-items: center;
+        justify-content:center;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 20px 20px;
+        padding-left: 22px;
+    }
+    .habilidad{
+        width: 150px;
+        height: 150px;
+        padding:10px 10px;
+    }
+    .habilidad-img img{
+        width: 100px;
+        height: 100px;
+        margin-top: 15px;
+    }
+    /*portfolio*/
+    .teams{
+        height: 90vh;
+        display: block;
+        flex-direction: column;
+    }
+    .teams .carousel{
+        display: block;
+        flex-direction: column;
+        margin-top: 60px;
+    }
+
+    /*contacto*/
+    .contacto{
+        min-height: 100vh;
+        display: block;
+    }
+    .contenido{
+        display: block;
+    }
+    .subcontenido{
+        min-height: 85vh;
+        display:block;
+    }
+    .contenedor__contacto h3{
+        font-size: 24px;
+        margin: 5px 0px;
+    }
+    .contenedor__contacto p{
+        font-size: 24px;
+    }
+    .info .col{
+        padding: 5px 0px;
+    }
+    .info .col a{
+        font-size: 24px;
+    }
+    .info .col p{
+        font-size: 24px;
+    }
+    .contenedor__contacto .redes1{
+        margin: 5px 0px;
+        display: block;
+    }
+    .subcontenido .form{
+        overflow: hidden;
+    }
+    .subcontenido .form h3{
+       font-size: 24px;
+       padding: 5px 0px;
+    }
+    .subcontenido .form form input, .subcontenido .form form textarea{
+        margin: 5px 0px;
+        padding: 5px;
+        font-size: 20px;
+    }
+    .subcontenido .form form input{
+        max-height: 45px;
+        resize: none;
+        overflow: hidden;
+    }
+    .subcontenido .form form textarea{
+        max-height: 100px;
+        overflow: hidden;
+    }
+    .subcontenido .form form .btn__enviar{
+        padding: 5px 18px;
+        font-size: 16px;
+        margin: 10px;
+        overflow: hidden;
+    }
+    /*copyright*/
+    footer{
+        display: block;
+        height: 12vh;
+    }
+    footer span{
+        font-size: 24px;
+        padding: 5px 0;
+    }
+}
+@media(max-width:600px){
+    .menu .mainmenu{
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: var(--secund__title);
+        transition: top 2s ease;
+        display: none;
+    }
+    .menu .mainmenu .closemenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 50px;
+        color: var(--purple__title);
+        font-size: 32px;
+    }
+    .menu .openmenu{
+        display: block;
+    }
+    .menu .mainmenu a{
+        color: var(--four__title);
+    }
+    .menu .mainmenu a:hover{
+        background: none;
+        color: var(--purple__title);
+        font-size: 1.6rem;
+    }
+
+    /*header*/
+    .information .info__1{
+        display: block;
+        overflow: hidden;
+        padding-top: 80px;
+        justify-content: space-between;
+    }
+    .mi__nombre .titulo{
+        font-size: 30px;
+    }
+    .mi__nombre .sub__titulo{
+        font-size: 28px;
+    }
+    .foto__header{
+        margin: 50px 0;
+        text-align: center;
+        overflow: hidden;
+    }
+    /*abaut*/
+    .abaut__contenedor .abaut__container{
+        margin: 0 20px;
+    }
+    .abaut__contenedor .abaut__container .abaut__cont{
+        display: block;
+        margin: 0;
+    }
+    .abaut__contenedor .abaut__container .abaut__cont figure img{
+        width: 350px;
+        height: 400px;
+    }
+    .abaut__contenedor .abaut__container .abaut__cont .resume__abaut{
+        margin-left: 0;
+    }
+    .abaut__contenedor .abaut__container .abaut__cont .resume__abaut .resume p{
+        text-align: justify;
+        color: var(--four__title);
+        font-family:'PT Serif', serif;
+        font-size:24px;
+    }
+    /*skills*/
+    .habilidades{
+        width: 100%;
+        height: 135vh;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .habilidad-contenedor{
+        overflow: hidden;
+        align-items: center;
+        justify-content:center;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding-left: 0;
+        
+    }
+    .habilidad{
+        width:110px;
+        height: 110px;
+        margin:10px 10px;
+        overflow: hidden;
+    }
+    .habilidad-img img{
+        width: 80px;
+        height: 80px;
+        margin-top: 25px;
+    }
+    /*portfolio*/
+    .teams{
+        display: block;
+        flex-direction: column;
+    }
+    .teams .carousel{
+        display: block;
+        flex-direction: column;
+        margin-top: 60px;
+    }
+
+    /*contacto*/
+    .contacto{
+        min-height: 110vh;
+        display: block;
+    }
+    .contenido{
+        display: block;
+    }
+    .subcontenido{
+        min-height: 91vh;
+        display:block;
+    }
+    .contenedor__contacto h3{
+        font-size: 30px;
+        margin: 5px 0px;
+    }
+    .contenedor__contacto p{
+        font-size: 24px;
+    }
+    .contenedor__contacto span{
+        font-size: 28px;
+    }
+
+    .info .col{
+        padding: 5px 0px;
+    }
+    .info .col a{
+        font-size: 24px;
+    }
+    .info .col p{
+        font-size: 24px;
+    }
+    .contenedor__contacto .redes1{
+        margin: 5px 0px;
+        display: block;
+    }
+    .subcontenido .form{
+        overflow: hidden;
+    }
+    .subcontenido .form h3{
+       font-size: 30px;
+       padding: 5px 0px;
+    }
+    .subcontenido .form form input, .subcontenido .form form textarea{
+        margin: 8px 0px;
+        padding: 5px;
+        font-size: 24px;
+    }
+    .subcontenido .form form input{
+        max-height: 45px;
+        resize: none;
+        overflow: hidden;
+    }
+    .subcontenido .form form textarea{
+        max-height: 100px;
+        overflow: hidden;
+    }
+    .subcontenido .form form .btn__enviar{
+        padding: 5px 18px;
+        font-size: 16px;
+        margin: 10px;
+        overflow: hidden;
+    }
+    /*copyright*/
+    footer{
+        display: block;
+        height: 12vh;
+    }
+    footer span{
+        font-size: 22px;
+    }
+}
+
+@media(max-width:500px) {
+    .information .info__1{
+        padding-top: 50px;
+    }
+    .mi__nombre .titulo{
+        font-size: 28px;
+    }
+   
+    .mi__nombre .sub__titulo{
+        font-size: 28px;
+    }
+    .foto__header{
+        margin: 50px 0;
+        text-align: center;
+        overflow: hidden;
+    }
+    /*Abaut*/
+    .abaut__contenedor{
+        height: 110vh;
+    }
+    .abaut__contenedor .abaut__container .abaut__cont figure img{
+        width: 330px;
+        height: 380px;
+    }
+    .abaut__contenedor .abaut__container .abaut__cont .resume__abaut .resume p{
+        font-size: 24px;
+    }
+    /*skills*/
+    .habilidades{
+        width: 100%;
+        height: 175vh;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .habilidad-contenedor{
+        overflow: hidden;
+        align-items: center;
+        justify-content:center;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 25px;
+        
+    }
+    .habilidad{
+        width:135px;
+        height: 130px;
+        margin:10px 10px;
+        overflow: hidden;
+    }
+    .habilidad-img img{
+        width: 100px;
+        height: 100px;
+        margin-top: 25px;
+    }
+    /*portfolio*/
+    .teams{
+        display: block;
+        flex-direction: column;
+    }
+    .teams .carousel{
+        display: block;
+        flex-direction: column;
+        margin-top: 60px;
+    }
+
+    /*contacto*/
+    .contacto{
+        height: 110vh;
+        display: block;
+    }
+    .contenido{
+        display: block;
+    }
+    .subcontenido{
+        min-height: 91vh;
+        display:block;
+    }
+    .contenedor__contacto h3{
+        font-size: 30px;
+        margin: 5px 0px;
+    }
+    .contenedor__contacto p{
+        font-size: 24px;
+    }
+    .contenedor__contacto span{
+        font-size: 28px;
+    }
+
+    .info .col{
+        padding: 5px 0px;
+    }
+    .info .col a{
+        font-size: 24px;
+    }
+    .info .col p{
+        font-size: 24px;
+    }
+    .contenedor__contacto .redes1{
+        margin: 5px 0px;
+        display: block;
+    }
+    .subcontenido .form{
+        overflow: hidden;
+    }
+    .subcontenido .form h3{
+       font-size: 30px;
+       padding: 5px 0px;
+    }
+    .subcontenido .form form input, .subcontenido .form form textarea{
+        margin: 8px 0px;
+        padding: 5px;
+        font-size: 24px;
+    }
+    .subcontenido .form form input{
+        max-height: 45px;
+        resize: none;
+        overflow: hidden;
+    }
+    .subcontenido .form form textarea{
+        max-height: 100px;
+        overflow: hidden;
+    }
+    .subcontenido .form form .btn__enviar{
+        padding: 5px 18px;
+        font-size: 16px;
+        margin: 10px;
+        overflow: hidden;
+    }
+    /*copyright*/
+    footer{
+        height: 12vh;
+        display: block;
+    }
+    footer span{
+        font-size: 22px;
+        padding: -1px 0;
+    }
+}
+@media(max-width:400px) {
+    .information .info__1{
+        padding-top: 50px;
+    }
+    .mi__nombre .titulo{
+        font-size: 24px;
+    }
+    .mi__nombre .description{
+        font-size: 20px;
+    }
+    .foto__header{
+        text-align: center;
+        margin-left: -50PX;
+    }
+    /*Abaut*/
+    .abaut__contenedor{
+        height: 120vh;
+    }
+    .abaut__contenedor .abaut__container .abaut__cont figure img{
+        width: 350px;
+        height: 400px;
+    }
+    .abaut__contenedor .abaut__container .abaut__cont .resume__abaut .resume p{
+        font-size: 24px;
+    }
+    /*skills*/
+    .habilidades{
+        width: 100%;
+        height: 175vh;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .habilidad-contenedor{
+        overflow: hidden;
+        align-items: center;
+        justify-content:center;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 0px;
+        
+    }
+    .habilidad{
+        width:135px;
+        height: 130px;
+        margin:10px 10px;
+        overflow: hidden;
+    }
+    .habilidad-img img{
+        width: 100px;
+        height: 100px;
+        margin-top: 25px;
+    }
+    /*portfolio*/
+    .teams{
+        display: block;
+        flex-direction: column;
+    }
+    .teams .carousel{
+        display: block;
+        flex-direction: column;
+        margin-top: 60px;
+    }
+
+    /*contacto*/
+    .contacto{
+        max-height: 120vh;
+        display: block;
+    }
+    .contenido{
+        display: block;
+    }
+    .subcontenido{
+        min-height: 91vh;
+        display:block;
+    }
+    .contenedor__contacto h3{
+        font-size: 30px;
+        margin: 5px 0px;
+    }
+    .contenedor__contacto p{
+        font-size: 24px;
+    }
+    .contenedor__contacto span{
+        font-size: 28px;
+    }
+
+    .info .col{
+        padding: 5px 0px;
+    }
+    .info .col a{
+        font-size: 24px;
+    }
+    .info .col p{
+        font-size: 21px;
+    }
+    .contenedor__contacto .redes1{
+        margin: 5px 0px;
+        display: block;
+    }
+    .subcontenido .form{
+        overflow: hidden;
+    }
+    .subcontenido .form h3{
+       font-size: 30px;
+       padding: 5px 0px;
+    }
+    .subcontenido .form form input, .subcontenido .form form textarea{
+        margin: 8px 0px;
+        padding: 5px;
+        font-size: 24px;
+    }
+    .subcontenido .form form input{
+        max-height: 45px;
+        resize: none;
+        overflow: hidden;
+    }
+    .subcontenido .form form textarea{
+        max-height: 100px;
+        overflow: hidden;
+    }
+    .subcontenido .form form .btn__enviar{
+        padding: 5px 18px;
+        font-size: 16px;
+        margin: 10px;
+        overflow: hidden;
+    }
+    /*copyright*/
+    footer{
+        height: 12vh;
+        display: block;
+    }
+    footer span{
+        font-size: 22px;
+        padding: -1px 0;
+    }
+}
